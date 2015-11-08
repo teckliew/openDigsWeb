@@ -1,0 +1,21 @@
+body, html, .body-container  {
+  height: 100%;
+  font-size: .95em;
+}
+header {
+  height: 30px;
+}
+#login-buttons {
+  position: absolute;
+  margin: 7px 10px;
+  right: 0;
+}
+
+#login-dropdown-list {
+  top: 8px;
+  left: -180px;
+}
+
+.video-stream {
+  height: 100%;
+}

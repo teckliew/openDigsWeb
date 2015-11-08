@@ -1,0 +1,49 @@
+.self {
+
+}
+
+.username {
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+.chatroom {
+  overflow-y: scroll;
+  height: 80%;
+
+}
+
+.submitChat {
+  float: right;
+}
+
+.chatbox {
+  height: 100%;
+  position: absolute;
+}
+
+.messages .message-container:nth-child(odd) {
+    background: #cfd8dc;
+}
+
+
+.message-container .row {
+  margin: 0px;
+}
+
+.message-container {
+  padding: 5px 0px;
+  display: block;
+}
+
+.newMessage {
+  width: 100%;
+  padding: 20px;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+}
+
+form, input {
+  width: 100%;
+}

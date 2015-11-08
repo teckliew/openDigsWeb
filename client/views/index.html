@@ -1,0 +1,21 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenDigs</title>
+</head>
+<body>
+  <header>
+    <div class="row">
+      {{> loginButtons}}
+    </div>
+  </header>
+  <div class="body-container row">
+    <div class="video-stream col s9 blue-grey darken-4">
+      {{> video}}
+      <div class="video-list">
+      </div>
+    </div>
+    <div class="chatbox col s3 offset-s9">
+      {{> chat}}
+    </div>
+  </div>
+</body>

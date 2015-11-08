@@ -1,0 +1,19 @@
+<template name="newMessage">
+  <div class="newMessage">
+    <form name="message">
+      <input type="text" name="message" placeholder="chat here" autocomplete="off" />
+      <div class="info">
+        {{#if MessageTooLong}}
+          <span class="danger count">{{msgCount}}</span>
+        {{else}}
+          <span class="count">{{msgCount}}</span>
+        {{/if}}
+        {{#if isValidMessage}}
+          <button type="submit" class="submitChat">Send</button>
+        {{else}}
+          <button type="submit" class="submitChat" disabled>Send</button>
+        {{/if}}
+      </div>
+    </form>
+  </div>
+</template>

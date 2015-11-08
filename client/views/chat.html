@@ -1,0 +1,13 @@
+<template name="chat">
+  <div class="chatroom blue-grey lighten-5">
+    <div class="messages">
+      {{> messages}}
+    </div>
+  </div>
+    {{#if currentUser}}
+      {{> newMessage}}
+      <hr />
+    {{else}}
+      <p>Sign in to chat!</p>
+    {{/if}}
+</template>
