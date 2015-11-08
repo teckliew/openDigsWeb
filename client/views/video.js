@@ -1,3 +1,7 @@
+function readableNum(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 Meteor.startup(function () {
   Meteor.call('videoList', function(error, data) {
     var heroVid = {
@@ -19,7 +23,7 @@ Template.video.helpers({
   },
   price: function() {
     var data = Session.get('heroVid');
-    return data['price'];
+    return readableNum(data['price']);
   },
   title: function() {
     var data = Session.get('heroVid');
